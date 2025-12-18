@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+/* Members Section */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Member Card */
+.member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+/* Member Photo - Normal Rectangular */
+.member-photo {
+    width: 150px;        /* adjust size as needed */
+    height: 150px;
+    object-fit: cover;   /* keeps photo proportions */
+    margin-bottom: 15px; /* space below photo */
+    border: 3px solid #0073e6; /* optional border */
+}
+
+/* Member Details */
+.member h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.5em;
+    color: #0073e6;
+}
+
+.member p {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.member p strong {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #0073e6;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {
+    .members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
